@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		8A429DC92762208B002BFDD3 /* NC2_TappingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */; };
-		8A429DCB2762208B002BFDD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DCA2762208B002BFDD3 /* ContentView.swift */; };
 		8A429DCD2762208C002BFDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A429DCC2762208C002BFDD3 /* Assets.xcassets */; };
 		8A429DD02762208C002BFDD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A429DCF2762208C002BFDD3 /* Preview Assets.xcassets */; };
+		8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DD6276220C7002BFDD3 /* TappingTab.swift */; };
+		8A429DD9276223E8002BFDD3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DD8276223E8002BFDD3 /* CardView.swift */; };
+		8A656CBE276280F30039F59B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A656CBD276280F30039F59B /* ListItem.swift */; };
+		8A9D92EE276347DE00AF7796 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92ED276347DE00AF7796 /* Course.swift */; };
+		8A9D92F1276348B200AF7796 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F0276348B200AF7796 /* Data.swift */; };
+		8A9D92F3276352E400AF7796 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F2276352E400AF7796 /* Section.swift */; };
+		8A9D92F5276373EE00AF7796 /* InterestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F4276373EE00AF7796 /* InterestCard.swift */; };
+		8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F627639A6C00AF7796 /* Interest.swift */; };
+		8A9D92F92763A45600AF7796 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F82763A45600AF7796 /* DetailsScreen.swift */; };
+		8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453052763C17C00A04D3C /* DashboardTab.swift */; };
+		8AB453082763C1B700A04D3C /* AudiobooksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453072763C1B700A04D3C /* AudiobooksTab.swift */; };
+		8AB4530A2763C1E500A04D3C /* ChallengesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453092763C1E500A04D3C /* ChallengesTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A429DC52762208B002BFDD3 /* NC2_Tapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2_Tapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_TappingApp.swift; sourceTree = "<group>"; };
-		8A429DCA2762208B002BFDD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A429DCC2762208C002BFDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A429DCF2762208C002BFDD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A429DD6276220C7002BFDD3 /* TappingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappingTab.swift; sourceTree = "<group>"; };
+		8A429DD8276223E8002BFDD3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8A656CBD276280F30039F59B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		8A9D92ED276347DE00AF7796 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		8A9D92F0276348B200AF7796 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		8A9D92F2276352E400AF7796 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8A9D92F4276373EE00AF7796 /* InterestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCard.swift; sourceTree = "<group>"; };
+		8A9D92F627639A6C00AF7796 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		8A9D92F82763A45600AF7796 /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
+		8AB453052763C17C00A04D3C /* DashboardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTab.swift; sourceTree = "<group>"; };
+		8AB453072763C1B700A04D3C /* AudiobooksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobooksTab.swift; sourceTree = "<group>"; };
+		8AB453092763C1E500A04D3C /* ChallengesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +73,9 @@
 		8A429DC72762208B002BFDD3 /* NC2_Tapping */ = {
 			isa = PBXGroup;
 			children = (
+				8AB453022763C0E500A04D3C /* ui */,
+				8A9D92EF2763489800AF7796 /* data */,
 				8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */,
-				8A429DCA2762208B002BFDD3 /* ContentView.swift */,
 				8A429DCC2762208C002BFDD3 /* Assets.xcassets */,
 				8A429DCE2762208C002BFDD3 /* Preview Content */,
 			);
@@ -65,6 +88,48 @@
 				8A429DCF2762208C002BFDD3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A9D92EF2763489800AF7796 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8A9D92ED276347DE00AF7796 /* Course.swift */,
+				8A9D92F0276348B200AF7796 /* Data.swift */,
+				8A9D92F2276352E400AF7796 /* Section.swift */,
+				8A9D92F627639A6C00AF7796 /* Interest.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		8AB453022763C0E500A04D3C /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				8AB453032763C0EC00A04D3C /* tabs */,
+				8A656CBD276280F30039F59B /* ListItem.swift */,
+				8A9D92F4276373EE00AF7796 /* InterestCard.swift */,
+				8A9D92F82763A45600AF7796 /* DetailsScreen.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		8AB453032763C0EC00A04D3C /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				8AB453042763C0FD00A04D3C /* tapping */,
+				8AB453052763C17C00A04D3C /* DashboardTab.swift */,
+				8AB453072763C1B700A04D3C /* AudiobooksTab.swift */,
+				8AB453092763C1E500A04D3C /* ChallengesTab.swift */,
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		8AB453042763C0FD00A04D3C /* tapping */ = {
+			isa = PBXGroup;
+			children = (
+				8A429DD8276223E8002BFDD3 /* CardView.swift */,
+				8A429DD6276220C7002BFDD3 /* TappingTab.swift */,
+			);
+			path = tapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +202,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A429DCB2762208B002BFDD3 /* ContentView.swift in Sources */,
+				8A9D92F1276348B200AF7796 /* Data.swift in Sources */,
+				8A9D92EE276347DE00AF7796 /* Course.swift in Sources */,
+				8A9D92F92763A45600AF7796 /* DetailsScreen.swift in Sources */,
+				8A656CBE276280F30039F59B /* ListItem.swift in Sources */,
+				8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */,
+				8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */,
+				8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */,
+				8A429DD9276223E8002BFDD3 /* CardView.swift in Sources */,
+				8AB4530A2763C1E500A04D3C /* ChallengesTab.swift in Sources */,
+				8A9D92F5276373EE00AF7796 /* InterestCard.swift in Sources */,
+				8AB453082763C1B700A04D3C /* AudiobooksTab.swift in Sources */,
 				8A429DC92762208B002BFDD3 /* NC2_TappingApp.swift in Sources */,
+				8A9D92F3276352E400AF7796 /* Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.SpaceAid.NC2-Tapping";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.seldon1000.NC2-Tapping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.SpaceAid.NC2-Tapping";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.seldon1000.NC2-Tapping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
