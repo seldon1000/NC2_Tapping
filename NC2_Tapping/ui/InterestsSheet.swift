@@ -19,6 +19,7 @@ struct InterestsSheet: View {
                         InterestCard(interest: interests[2 * i + 1])
                     }
                     .padding(.bottom, 8)
+                    .padding(.horizontal)
                 }
             }
             .navigationTitle("Your Interests")
