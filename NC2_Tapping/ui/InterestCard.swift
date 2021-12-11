@@ -21,6 +21,7 @@ struct InterestCard: View {
             ZStack {
                 Image(interest.image)
                     .resizable()
+                    .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width / 2 - 24, height: 104)
                 VStack {
                     Spacer()

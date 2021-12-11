@@ -63,30 +63,7 @@ struct NC2_TappingApp: App {
                     }
                 }
                 .sheet(isPresented: $isPresented) {
-                    NavigationView {
-                        ScrollView {
-                            ForEach(0..<interests.count / 2) { i in
-                                HStack(spacing: 16) {
-                                    InterestCard(interest: interests[2 * i])
-                                    InterestCard(interest: interests[2 * i + 1])
-                                }
-                            }
-                        }
-                        .navigationTitle("Your Interests")
-                        .navigationBarTitleDisplayMode(.large)
-                        .toolbar {
-                            ToolbarItem(placement: .navigationBarLeading) {
-                                Button(action: { isPresented.toggle() }) {
-                                    Text("Cancel")
-                                }
-                            }
-                            ToolbarItem(placement: .navigationBarTrailing) {
-                                Button(action: { isPresented.toggle() }) {
-                                    Text("Save")
-                                }
-                            }
-                        }
-                    }
+                    InterestsSheet(isPresented: $isPresented)
                 }
             }
             .preferredColorScheme(.light)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A116F5D2764BC9300256FD9 /* InterestsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */; };
 		8A429DC92762208B002BFDD3 /* NC2_TappingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */; };
 		8A429DCD2762208C002BFDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A429DCC2762208C002BFDD3 /* Assets.xcassets */; };
 		8A429DD02762208C002BFDD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A429DCF2762208C002BFDD3 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsSheet.swift; sourceTree = "<group>"; };
 		8A429DC52762208B002BFDD3 /* NC2_Tapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2_Tapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_TappingApp.swift; sourceTree = "<group>"; };
 		8A429DCC2762208C002BFDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				8A656CBD276280F30039F59B /* ListItem.swift */,
 				8A9D92F4276373EE00AF7796 /* InterestCard.swift */,
 				8A9D92F82763A45600AF7796 /* DetailsScreen.swift */,
+				8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				8A9D92F92763A45600AF7796 /* DetailsScreen.swift in Sources */,
 				8A656CBE276280F30039F59B /* ListItem.swift in Sources */,
 				8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */,
+				8A116F5D2764BC9300256FD9 /* InterestsSheet.swift in Sources */,
 				8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */,
 				8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */,
 				8A429DD9276223E8002BFDD3 /* CardView.swift in Sources */,
