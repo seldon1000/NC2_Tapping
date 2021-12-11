@@ -16,8 +16,8 @@ struct ListItem: View {
         HStack(alignment: .center, spacing: 16) {
             Image(course.image)
                 .resizable()
+                .scaledToFill()
                 .frame(width: 48, height: 48)
-                .scaledToFit()
                 .cornerRadius(8)
                 .shadow(radius: 8)
             VStack(alignment: .leading) {
