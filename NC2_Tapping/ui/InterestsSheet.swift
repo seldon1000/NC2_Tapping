@@ -13,10 +13,14 @@ struct InterestsSheet: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                ForEach(0..<interests.count / 2) { i in
+                ForEach(0..<(interests.count % 2 == 0 ? interests.count / 2 : interests.count / 2 + 1)) { i in
                     HStack(spacing: 16) {
                         InterestCard(interest: interests[2 * i])
-                        InterestCard(interest: interests[2 * i + 1])
+                        if 2 * i + 1 < interests.count {
+                            InterestCard(interest: interests[2 * i + 1])
+                        } else {
+                            Spacer()
+                        }
                     }
                     .padding(.bottom, 8)
                     .padding(.horizontal)

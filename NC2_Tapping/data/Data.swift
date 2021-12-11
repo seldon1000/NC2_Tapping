@@ -19,7 +19,13 @@ let interests: [Interest] = [
     Interest(title: "Instant Boost", image: "5"),
     Interest(title: "Micro Boost", image: "6"),
     Interest(title: "\"Motivate Me To\"", image: "7"),
-    Interest(title: "Pain Relief", image: "8")
+    Interest(title: "Pain Relief", image: "8"),
+    Interest(title: "Parents and Kids", image: "9"),
+    Interest(title: "Relationships", image: "10"),
+    Interest(title: "Sleep Support", image: "11"),
+    Interest(title: "Support Your Body", image: "12"),
+    Interest(title: "Tapping Into Meditation", image: "13"),
+    Interest(title: "Turn Your Day Around", image: "14")
 ]
 
 let courses: [Course] = [
