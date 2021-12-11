@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ListItem: View {
-    @State var isActive: Bool = false
-    
     let course: Course
     
     var body: some View {
@@ -29,6 +27,7 @@ struct ListItem: View {
                     .foregroundColor(.gray)
                     .lineLimit(1)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             VStack(spacing: 4) {
                 Text("")
                     .font(.system(size: 10))
@@ -45,12 +44,6 @@ struct ListItem: View {
                     .font(.system(size: 10))
                     .foregroundColor(.gray)
             }
-        }
-        .frame(width: UIScreen.main.bounds.width - 64)
-        .overlay {
-            NavigationLink(destination: DetailsScreen(course: course), isActive: $isActive) {}
-        }.onTapGesture {
-            isActive.toggle()
         }
     }
 }

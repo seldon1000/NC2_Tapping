@@ -44,12 +44,15 @@ struct CardView: View {
         .overlay {
             NavigationLink(destination: List {
                 ForEach(0..<courses.count) { i in
-                    ListItem(course: courses[i])
+                    NavigationLink(destination: DetailsScreen(course: courses[i])) {
+                        ListItem(course: courses[i])
+                    }
+                    .buttonStyle(.plain)
                 }
             }.navigationTitle(section.title).navigationBarTitleDisplayMode(.inline), isActive: $isActive) {}
         }
-        .highPriorityGesture(TapGesture().onEnded { _ in
+        .onTapGesture {
             isActive.toggle()
-        })
+        }
     }
 }
