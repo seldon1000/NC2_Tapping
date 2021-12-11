@@ -73,8 +73,8 @@
 		8A429DC72762208B002BFDD3 /* NC2_Tapping */ = {
 			isa = PBXGroup;
 			children = (
-				8AB453022763C0E500A04D3C /* ui */,
 				8A9D92EF2763489800AF7796 /* data */,
+				8AB453022763C0E500A04D3C /* ui */,
 				8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */,
 				8A429DCC2762208C002BFDD3 /* Assets.xcassets */,
 				8A429DCE2762208C002BFDD3 /* Preview Content */,

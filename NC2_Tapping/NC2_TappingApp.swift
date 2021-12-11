@@ -11,12 +11,23 @@ import SwiftUI
 struct NC2_TappingApp: App {
     @State var searchedText: String = ""
     @State var isPresented: Bool = false
+    @State var selectedTab: Int = 1
+    
+    func getNavigationTitle() -> String {
+        switch selectedTab {
+        case 1: return "Tapping"
+        case 2: return "Dashboard"
+        case 3: return "Audiobooks"
+        case 4: return "Challenges"
+        default: return ""
+        }
+    }
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                TabView {
-                    TappingTab(isPresented: $isPresented)
+                TabView(selection: $selectedTab) {
+                    TappingTab()
                         .tag(1)
                         .tabItem {
                             Label("Tapping", systemImage: "hand.tap")
@@ -29,14 +40,16 @@ struct NC2_TappingApp: App {
                     AudiobooksTab()
                         .tag(3)
                         .tabItem {
-                            Label("Tapping", systemImage: "waveform")
+                            Label("Audiobooks", systemImage: "waveform")
                         }
                     ChallengesTab()
                         .tag(4)
                         .tabItem {
-                            Label("Tapping", systemImage: "rectangle.grid.2x2")
+                            Label("Challenges", systemImage: "rectangle.grid.2x2")
                         }
                 }
+                .navigationTitle(getNavigationTitle())
+                .navigationBarTitleDisplayMode(.large)
                 .searchable(text: $searchedText, prompt: "Search")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -46,6 +59,32 @@ struct NC2_TappingApp: App {
                                 .scaledToFit()
                                 .clipShape(Circle())
                                 .frame(width: 56, height: 56)
+                        }
+                    }
+                }
+                .sheet(isPresented: $isPresented) {
+                    NavigationView {
+                        ScrollView {
+                            ForEach(0..<interests.count / 2) { i in
+                                HStack(spacing: 16) {
+                                    InterestCard(interest: interests[2 * i])
+                                    InterestCard(interest: interests[2 * i + 1])
+                                }
+                            }
+                        }
+                        .navigationTitle("Your Interests")
+                        .navigationBarTitleDisplayMode(.large)
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarLeading) {
+                                Button(action: { isPresented.toggle() }) {
+                                    Text("Cancel")
+                                }
+                            }
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button(action: { isPresented.toggle() }) {
+                                    Text("Save")
+                                }
+                            }
                         }
                     }
                 }

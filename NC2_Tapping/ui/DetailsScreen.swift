@@ -14,8 +14,6 @@ struct DetailsScreen: View {
         ScrollView {
             
         }
-        .navigationTitle(course.title)
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {}) {

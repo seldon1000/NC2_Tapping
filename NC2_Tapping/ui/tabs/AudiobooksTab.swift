@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AudiobooksTab: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .navigationTitle("Audiobooks")
-            .navigationBarTitleDisplayMode(.large)
+        Image("audiobooks")
+            .resizable()
+            .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
     }
 }
