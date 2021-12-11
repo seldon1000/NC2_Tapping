@@ -13,7 +13,7 @@ struct CardView: View {
     let section: Section
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 8) {
             Text(section.title.uppercased())
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.gray)
@@ -23,6 +23,9 @@ struct CardView: View {
             ForEach(0..<4) { i in
                 if i < courses.count {
                     ListItem(course: courses[i])
+                    if i < 3 {
+                        Divider()
+                    }
                 }
             }
             HStack {

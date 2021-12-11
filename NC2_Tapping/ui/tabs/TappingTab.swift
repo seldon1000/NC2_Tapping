@@ -12,8 +12,9 @@ struct TappingTab: View {
         ScrollView {
             ForEach(0..<sections.count) { i in
                 CardView(section: sections[i])
-                    .padding(.vertical)
+                    .padding(.bottom)
             }
+            .padding(.vertical)
         }
     }
 }

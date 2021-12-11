@@ -29,8 +29,7 @@ struct ListItem: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             VStack(spacing: 4) {
-                Text("")
-                    .font(.system(size: 10))
+                Spacer()
                 Button(action: {}) {
                     Text("PLAY")
                         .font(.system(size: 14, weight: .bold))
