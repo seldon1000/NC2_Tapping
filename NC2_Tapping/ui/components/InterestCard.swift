@@ -22,7 +22,7 @@ struct InterestCard: View {
                 Image(interest.image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width / 2 - 24, height: 112)
+                    .frame(width: UIScreen.main.bounds.width / 2 - 24, height: 96)
                 VStack {
                     Spacer()
                     Text(interest.title)
@@ -37,7 +37,6 @@ struct InterestCard: View {
                 .shadow(color: .black, radius: 4, x: 0, y: 0)
                 .padding(.bottom)
             }
-            .frame(width: UIScreen.main.bounds.width / 2 - 24, height: 112)
             .cornerRadius(8)
             .shadow(radius: 4)
         }
