@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct TappingTab: View {
+    @Environment(\.isSearching) var isSearching
+    
+    @Binding var searchedText: String
+    
     var body: some View {
-        ScrollView {
-            ForEach(0..<sections.count) { i in
-                CardView(section: sections[i])
-                    .padding(.bottom)
+        ZStack {
+            ScrollView {
+                ForEach(0..<sections.count) { i in
+                    CardView(section: sections[i])
+                        .padding(.bottom)
+                }
+                .padding(.vertical)
             }
-            .padding(.vertical)
+            .hidden(isSearching)
+            SearchScreen(searchedText: $searchedText)
+                .hidden(!isSearching)
+                .padding(.top, 48)
+        }
+    }
+}
+
+extension View {
+    func hidden(_ shouldHide: Bool) -> some View {
+        withAnimation {
+            opacity(shouldHide ? 0 : 1)
         }
     }
 }

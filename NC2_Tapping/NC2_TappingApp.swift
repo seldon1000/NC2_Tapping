@@ -27,7 +27,7 @@ struct NC2_TappingApp: App {
         WindowGroup {
             NavigationView {
                 TabView(selection: $selectedTab) {
-                    TappingTab()
+                    TappingTab(searchedText: $searchedText)
                         .tag(1)
                         .tabItem {
                             Label("Tapping", systemImage: "hand.tap")
