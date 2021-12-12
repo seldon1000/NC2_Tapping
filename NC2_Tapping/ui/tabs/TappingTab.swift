@@ -14,9 +14,9 @@ struct TappingTab: View {
     
     var body: some View {
         NavigationView {
-            if isSearching {
+            ZStack {
                 SearchScreen(searchedText: $searchedText)
-            } else {
+                    .hidden(!isSearching)
                 ScrollView {
                     ForEach(0..<sections.count) { i in
                         CardView(section: sections[i])
@@ -24,12 +24,13 @@ struct TappingTab: View {
                     }
                     .padding(.vertical)
                 }
-                .navigationTitle("Tapping")
-                .navigationBarTitleDisplayMode(.large)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        AccountButton()
-                    }
+                .hidden(isSearching)
+            }
+            .navigationTitle("Tapping")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    AccountButton()
                 }
             }
         }

@@ -43,7 +43,7 @@ struct CardView: View {
         .background(RoundedRectangle(cornerRadius: 16)
                         .frame(width: UIScreen.main.bounds.width - 32)
                         .foregroundColor(.white)
-                        .shadow(color: .gray.opacity(0.5), radius: 16, x: 0, y: 0))
+                        .shadow(color: .gray.opacity(0.4), radius: 16, x: 0, y: 0))
         .overlay {
             NavigationLink(destination: List {
                 ForEach(courses) { course in

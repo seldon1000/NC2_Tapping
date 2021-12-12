@@ -16,7 +16,8 @@ struct AccountButton: View {
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
-                .frame(width: 56, height: 56)
+                .frame(width: 52, height: 52)
+                .shadow(color: .gray.opacity(0.4), radius: 8, x: 0, y: 0)
         }
         .sheet(isPresented: $isPresented) {
             InterestsSheet(isPresented: $isPresented)

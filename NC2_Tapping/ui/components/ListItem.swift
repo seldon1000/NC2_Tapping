@@ -19,7 +19,7 @@ struct ListItem: View {
                 .scaledToFill()
                 .frame(width: 48, height: 48)
                 .cornerRadius(8)
-                .shadow(radius: 8)
+                .shadow(color: .gray.opacity(0.4), radius: 8, x: 0, y: 0)
             VStack(alignment: .leading) {
                 Text(course.title)
                     .font(.system(size: 16, weight: .semibold))
