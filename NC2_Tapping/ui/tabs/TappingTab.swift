@@ -13,7 +13,9 @@ struct TappingTab: View {
     @Binding var searchedText: String
     
     var body: some View {
-        ZStack {
+        if isSearching {
+            SearchScreen(searchedText: $searchedText)
+        } else {
             ScrollView {
                 ForEach(0..<sections.count) { i in
                     CardView(section: sections[i])
@@ -21,18 +23,6 @@ struct TappingTab: View {
                 }
                 .padding(.vertical)
             }
-            .hidden(isSearching)
-            SearchScreen(searchedText: $searchedText)
-                .hidden(!isSearching)
-                .padding(.top, 48)
-        }
-    }
-}
-
-extension View {
-    func hidden(_ shouldHide: Bool) -> some View {
-        withAnimation {
-            opacity(shouldHide ? 0 : 1)
         }
     }
 }

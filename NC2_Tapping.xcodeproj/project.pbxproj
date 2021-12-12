@@ -24,6 +24,7 @@
 		8AB453082763C1B700A04D3C /* AudiobooksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453072763C1B700A04D3C /* AudiobooksTab.swift */; };
 		8AB4530A2763C1E500A04D3C /* ChallengesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453092763C1E500A04D3C /* ChallengesTab.swift */; };
 		8AD446D32766017E007B310D /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD446D22766017E007B310D /* SearchScreen.swift */; };
+		8AD446D527663609007B310D /* SearchCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD446D427663609007B310D /* SearchCategoryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		8AB453072763C1B700A04D3C /* AudiobooksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobooksTab.swift; sourceTree = "<group>"; };
 		8AB453092763C1E500A04D3C /* ChallengesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTab.swift; sourceTree = "<group>"; };
 		8AD446D22766017E007B310D /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		8AD446D427663609007B310D /* SearchCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +110,9 @@
 		8AB453022763C0E500A04D3C /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				8AD446D7276638E1007B310D /* components */,
+				8AD446D6276638CD007B310D /* screens */,
 				8AB453032763C0EC00A04D3C /* tabs */,
-				8A656CBD276280F30039F59B /* ListItem.swift */,
-				8A429DD8276223E8002BFDD3 /* CardView.swift */,
-				8A9D92F4276373EE00AF7796 /* InterestCard.swift */,
-				8A9D92F82763A45600AF7796 /* DetailsScreen.swift */,
-				8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */,
-				8AD446D22766017E007B310D /* SearchScreen.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -128,6 +126,27 @@
 				8AB453092763C1E500A04D3C /* ChallengesTab.swift */,
 			);
 			path = tabs;
+			sourceTree = "<group>";
+		};
+		8AD446D6276638CD007B310D /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				8A9D92F82763A45600AF7796 /* DetailsScreen.swift */,
+				8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */,
+				8AD446D22766017E007B310D /* SearchScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		8AD446D7276638E1007B310D /* components */ = {
+			isa = PBXGroup;
+			children = (
+				8A656CBD276280F30039F59B /* ListItem.swift */,
+				8A429DD8276223E8002BFDD3 /* CardView.swift */,
+				8A9D92F4276373EE00AF7796 /* InterestCard.swift */,
+				8AD446D427663609007B310D /* SearchCategoryButton.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +224,7 @@
 				8A9D92F92763A45600AF7796 /* DetailsScreen.swift in Sources */,
 				8A656CBE276280F30039F59B /* ListItem.swift in Sources */,
 				8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */,
+				8AD446D527663609007B310D /* SearchCategoryButton.swift in Sources */,
 				8A116F5D2764BC9300256FD9 /* InterestsSheet.swift in Sources */,
 				8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */,
 				8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */,

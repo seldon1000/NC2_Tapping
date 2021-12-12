@@ -46,13 +46,13 @@ struct CardView: View {
                         .shadow(color: .gray.opacity(0.5), radius: 16, x: 0, y: 0))
         .overlay {
             NavigationLink(destination: List {
-                ForEach(0..<courses.count) { i in
-                    NavigationLink(destination: DetailsScreen(course: courses[i])) {
-                        ListItem(course: courses[i])
+                ForEach(courses) { course in
+                    NavigationLink(destination: DetailsScreen(course: course)) {
+                        ListItem(course: course)
                     }
                     .buttonStyle(.plain)
                 }
-            }.navigationTitle(section.title).navigationBarTitleDisplayMode(.inline), isActive: $isActive) {}
+            }.navigationTitle(section.title).navigationBarTitleDisplayMode(.inline).listStyle(.plain), isActive: $isActive) {}
         }
         .onTapGesture {
             isActive.toggle()

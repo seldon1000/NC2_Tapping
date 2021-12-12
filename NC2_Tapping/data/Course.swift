@@ -7,18 +7,20 @@
 
 import SwiftUI
 
-class Course {
+class Course: Identifiable {
     let title: String
     let description: String
-    let category: String
+    let searchCategory: String
+    let interest: String
     let time: String
     let cost: String
     let image: String
     
-    init(title: String, description: String, category: String, time: String, cost: String, image: String) {
+    init(title: String, description: String, searchCategory: String, interest: String, time: String, cost: String, image: String) {
         self.title = title
         self.description = description
-        self.category = category
+        self.searchCategory = searchCategory
+        self.interest = interest
         self.time = time
         self.cost = cost
         self.image = image
