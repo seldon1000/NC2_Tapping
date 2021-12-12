@@ -19,7 +19,11 @@ struct TappingTab: View {
                     .hidden(!isSearching)
                 ScrollView {
                     ForEach(0..<sections.count) { i in
-                        CardView(section: sections[i])
+                        if i == 1 {
+                            SingleCardView()
+                                .padding(.bottom)
+                        }
+                        ListCardView(section: sections[i])
                             .padding(.bottom)
                     }
                     .padding(.vertical)

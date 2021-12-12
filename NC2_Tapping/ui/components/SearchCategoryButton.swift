@@ -15,7 +15,7 @@ struct SearchCategoryButton: View {
     var body: some View {
         Button(action: { searchedText = searchCategory }) {
             Text(searchCategory)
-                .font(.system(size: 24))
+                .font(.system(size: 22))
                 .foregroundColor(.blue)
         }
     }

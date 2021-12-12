@@ -14,7 +14,7 @@ struct SearchScreen: View {
         ZStack {
             VStack(alignment: .leading) {
                 Text("Discover")
-                    .font(.system(size: 24, weight: .bold))
+                    .font(.system(size: 22, weight: .bold))
                     .padding(.horizontal)
                 List {
                     ForEach(0..<searchCategories.count) { i in
