@@ -9,8 +9,20 @@ import SwiftUI
 
 struct DashboardTab: View {
     var body: some View {
-        Image("dashboard")
-            .resizable()
-            .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+        NavigationView {
+            ScrollView {
+                Image("dashboard")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: UIScreen.main.bounds.width)
+            }
+            .navigationTitle("Dashboard")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    AccountButton()
+                }
+            }
+        }
     }
 }

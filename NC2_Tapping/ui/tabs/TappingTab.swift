@@ -13,15 +13,24 @@ struct TappingTab: View {
     @Binding var searchedText: String
     
     var body: some View {
-        if isSearching {
-            SearchScreen(searchedText: $searchedText)
-        } else {
-            ScrollView {
-                ForEach(0..<sections.count) { i in
-                    CardView(section: sections[i])
-                        .padding(.bottom)
+        NavigationView {
+            if isSearching {
+                SearchScreen(searchedText: $searchedText)
+            } else {
+                ScrollView {
+                    ForEach(0..<sections.count) { i in
+                        CardView(section: sections[i])
+                            .padding(.bottom)
+                    }
+                    .padding(.vertical)
                 }
-                .padding(.vertical)
+                .navigationTitle("Tapping")
+                .navigationBarTitleDisplayMode(.large)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        AccountButton()
+                    }
+                }
             }
         }
     }

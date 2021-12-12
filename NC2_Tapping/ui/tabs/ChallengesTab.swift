@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ChallengesTab: View {
     var body: some View {
-        Image("challenges")
-            .resizable()
-            .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+        NavigationView {
+            ScrollView {
+                Image("challenges")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: UIScreen.main.bounds.width)
+            }
+            .navigationTitle("Challenges")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    AccountButton()
+                }
+            }
+        }
     }
 }

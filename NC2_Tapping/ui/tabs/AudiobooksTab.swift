@@ -9,8 +9,20 @@ import SwiftUI
 
 struct AudiobooksTab: View {
     var body: some View {
-        Image("audiobooks")
-            .resizable()
-            .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+        NavigationView {
+            ScrollView {
+                Image("audiobooks")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: UIScreen.main.bounds.width)
+            }
+            .navigationTitle("Audiobooks")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    AccountButton()
+                }
+            }
+        }
     }
 }

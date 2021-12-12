@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ListItem: View {
+    @State var isPresented: Bool = false
+    
     let course: Course
     
     var body: some View {
@@ -30,7 +32,7 @@ struct ListItem: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             VStack(spacing: 4) {
                 Spacer()
-                Button(action: {}) {
+                Button(action: { isPresented.toggle() }) {
                     Text("PLAY")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.blue)
@@ -43,6 +45,9 @@ struct ListItem: View {
                     .font(.system(size: 10))
                     .foregroundColor(.gray)
             }
+        }
+        .alert("Not Yet Implemented", isPresented: $isPresented) {
+            Text("OK")
         }
     }
 }

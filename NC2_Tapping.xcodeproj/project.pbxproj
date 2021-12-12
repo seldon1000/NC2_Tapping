@@ -14,6 +14,7 @@
 		8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DD6276220C7002BFDD3 /* TappingTab.swift */; };
 		8A429DD9276223E8002BFDD3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DD8276223E8002BFDD3 /* CardView.swift */; };
 		8A656CBE276280F30039F59B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A656CBD276280F30039F59B /* ListItem.swift */; };
+		8A76CC5E276670A5008CEF41 /* AccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76CC5D276670A5008CEF41 /* AccountButton.swift */; };
 		8A9D92EE276347DE00AF7796 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92ED276347DE00AF7796 /* Course.swift */; };
 		8A9D92F1276348B200AF7796 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F0276348B200AF7796 /* Data.swift */; };
 		8A9D92F3276352E400AF7796 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F2276352E400AF7796 /* Section.swift */; };
@@ -36,6 +37,7 @@
 		8A429DD6276220C7002BFDD3 /* TappingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappingTab.swift; sourceTree = "<group>"; };
 		8A429DD8276223E8002BFDD3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8A656CBD276280F30039F59B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		8A76CC5D276670A5008CEF41 /* AccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButton.swift; sourceTree = "<group>"; };
 		8A9D92ED276347DE00AF7796 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		8A9D92F0276348B200AF7796 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		8A9D92F2276352E400AF7796 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				8A429DD8276223E8002BFDD3 /* CardView.swift */,
 				8A9D92F4276373EE00AF7796 /* InterestCard.swift */,
 				8AD446D427663609007B310D /* SearchCategoryButton.swift */,
+				8A76CC5D276670A5008CEF41 /* AccountButton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				8A116F5D2764BC9300256FD9 /* InterestsSheet.swift in Sources */,
 				8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */,
 				8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */,
+				8A76CC5E276670A5008CEF41 /* AccountButton.swift in Sources */,
 				8A429DD9276223E8002BFDD3 /* CardView.swift in Sources */,
 				8AB4530A2763C1E500A04D3C /* ChallengesTab.swift in Sources */,
 				8A9D92F5276373EE00AF7796 /* InterestCard.swift in Sources */,
