@@ -47,7 +47,7 @@ struct CardView: View {
         .overlay {
             NavigationLink(destination: List {
                 ForEach(courses) { course in
-                    NavigationLink(destination: DetailsScreen(course: course)) {
+                    NavigationLink(destination: CourseDetailsScreen(course: course)) {
                         ListItem(course: course)
                     }
                     .buttonStyle(.plain)

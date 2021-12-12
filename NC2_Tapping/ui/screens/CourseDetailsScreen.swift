@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailsScreen: View {
+struct CourseDetailsScreen: View {
     var course: Course
     
     var body: some View {

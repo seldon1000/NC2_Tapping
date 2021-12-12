@@ -19,7 +19,7 @@
 		8A9D92F3276352E400AF7796 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F2276352E400AF7796 /* Section.swift */; };
 		8A9D92F5276373EE00AF7796 /* InterestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F4276373EE00AF7796 /* InterestCard.swift */; };
 		8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F627639A6C00AF7796 /* Interest.swift */; };
-		8A9D92F92763A45600AF7796 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F82763A45600AF7796 /* DetailsScreen.swift */; };
+		8A9D92F92763A45600AF7796 /* CourseDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D92F82763A45600AF7796 /* CourseDetailsScreen.swift */; };
 		8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453052763C17C00A04D3C /* DashboardTab.swift */; };
 		8AB453082763C1B700A04D3C /* AudiobooksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453072763C1B700A04D3C /* AudiobooksTab.swift */; };
 		8AB4530A2763C1E500A04D3C /* ChallengesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB453092763C1E500A04D3C /* ChallengesTab.swift */; };
@@ -41,7 +41,7 @@
 		8A9D92F2276352E400AF7796 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8A9D92F4276373EE00AF7796 /* InterestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCard.swift; sourceTree = "<group>"; };
 		8A9D92F627639A6C00AF7796 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
-		8A9D92F82763A45600AF7796 /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
+		8A9D92F82763A45600AF7796 /* CourseDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsScreen.swift; sourceTree = "<group>"; };
 		8AB453052763C17C00A04D3C /* DashboardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTab.swift; sourceTree = "<group>"; };
 		8AB453072763C1B700A04D3C /* AudiobooksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobooksTab.swift; sourceTree = "<group>"; };
 		8AB453092763C1E500A04D3C /* ChallengesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTab.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		8AD446D6276638CD007B310D /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				8A9D92F82763A45600AF7796 /* DetailsScreen.swift */,
+				8A9D92F82763A45600AF7796 /* CourseDetailsScreen.swift */,
 				8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */,
 				8AD446D22766017E007B310D /* SearchScreen.swift */,
 			);
@@ -221,7 +221,7 @@
 			files = (
 				8A9D92F1276348B200AF7796 /* Data.swift in Sources */,
 				8A9D92EE276347DE00AF7796 /* Course.swift in Sources */,
-				8A9D92F92763A45600AF7796 /* DetailsScreen.swift in Sources */,
+				8A9D92F92763A45600AF7796 /* CourseDetailsScreen.swift in Sources */,
 				8A656CBE276280F30039F59B /* ListItem.swift in Sources */,
 				8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */,
 				8AD446D527663609007B310D /* SearchCategoryButton.swift in Sources */,

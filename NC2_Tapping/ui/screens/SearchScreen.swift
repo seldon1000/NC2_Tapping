@@ -23,6 +23,7 @@ struct SearchScreen: View {
                 }
                 .listStyle(.plain)
             }
+            .padding(.top, 32)
             .hidden(!searchedText.isEmpty)
             List {
                 ForEach((courses.filter { it in it.title.lowercased().starts(with: searchedText.lowercased()) ||
@@ -31,7 +32,7 @@ struct SearchScreen: View {
                     it.interest.lowercased().contains(searchedText.lowercased()) ||
                     it.searchCategory == searchedText
                 })) { course in
-                    NavigationLink(destination: DetailsScreen(course: course)) {
+                    NavigationLink(destination: CourseDetailsScreen(course: course)) {
                         ListItem(course: course)
                     }
                     .buttonStyle(.plain)
