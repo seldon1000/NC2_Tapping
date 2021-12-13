@@ -35,7 +35,7 @@ struct NC2_TappingApp: App {
                         Label("Challenges", systemImage: "rectangle.grid.2x2")
                     }
             }
-            .searchable(text: $searchedText, prompt: "Search")
+            .searchable(text: $searchedText, prompt: "Search Courses, Meditations & More")
             .preferredColorScheme(.light)
         }
     }

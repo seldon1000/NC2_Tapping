@@ -11,20 +11,10 @@ struct SearchScreen: View {
     @Binding var searchedText: String
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading) {
-                Text("Discover")
-                    .font(.system(size: 22, weight: .bold))
-                    .padding(.horizontal)
-                List {
-                    ForEach(0..<searchCategories.count) { i in
-                        SearchCategoryButton(searchedText: $searchedText, searchCategory: searchCategories[i])
-                    }
-                }
-                .listStyle(.plain)
-            }
-            .padding(.top, 32)
-            .hidden(!searchedText.isEmpty)
+        VStack(alignment: .leading) {
+            Text("Results")
+                .font(.system(size: 22, weight: .bold))
+                .padding(.horizontal)
             List {
                 ForEach((courses.filter { it in it.title.lowercased().starts(with: searchedText.lowercased()) ||
                     it.title.lowercased().contains(searchedText.lowercased()) ||
@@ -39,9 +29,20 @@ struct SearchScreen: View {
                 }
             }
             .listStyle(.plain)
-            .hidden(searchedText.isEmpty)
         }
-        .padding(.horizontal)
+        .hidden(searchedText.isEmpty)
+        VStack(alignment: .leading) {
+            Text("Discover")
+                .font(.system(size: 22, weight: .bold))
+                .padding(.horizontal)
+            List {
+                ForEach(0..<searchCategories.count) { i in
+                    SearchCategoryButton(searchedText: $searchedText, searchCategory: searchCategories[i])
+                }
+            }
+            .listStyle(.plain)
+        }
+        .hidden(!searchedText.isEmpty)
     }
 }
 
