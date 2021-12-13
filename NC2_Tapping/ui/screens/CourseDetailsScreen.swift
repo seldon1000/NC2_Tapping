@@ -52,8 +52,8 @@ struct CourseDetailsScreen: View {
                     .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
             }
             .frame(height: UIScreen.main.bounds.height / 3)
-            VStack(spacing: 8) {
-                HStack {
+            VStack(spacing: 16) {
+                HStack(alignment: .top) {
                     Image("rock")
                         .resizable()
                         .scaledToFill()
@@ -99,17 +99,21 @@ struct CourseDetailsScreen: View {
                                     .font(.system(size: 24))
                             }
                         }
-                        .padding(.top)
                     }
                     .padding(.leading, 8)
                 }
                 Divider()
                 Text(course.description)
                     .font(.system(size: 16))
-                    .padding(.vertical)
                 Divider()
-                Toggle("Skip Rating", isOn: $isOn)
+                HStack {
+                    Image(systemName: "star.slash.fill")
+                        .font(.system(size: 24))
+                        .foregroundColor(.yellow)
+                    Toggle("Skip Rating", isOn: $isOn)
+                }
             }
+            .padding(.top, 8)
             .padding(.horizontal)
         }
         .navigationTitle(course.title)
