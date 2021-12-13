@@ -59,7 +59,6 @@ struct CourseDetailsScreen: View {
                         .scaledToFill()
                         .clipShape(Circle())
                         .frame(width: 112, height: 112)
-                        .shadow(color: .gray.opacity(0.4), radius: 8, x: 0, y: 0)
                     VStack(alignment: .leading) {
                         Text("The Rock")
                             .font(.system(size: 20, weight: .bold))

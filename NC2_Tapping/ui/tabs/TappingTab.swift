@@ -17,7 +17,7 @@ struct TappingTab: View {
             ZStack {
                 SearchScreen(searchedText: $searchedText)
                     .padding(.horizontal)
-                    .padding(.top, 32)
+                    .padding(.top)
                     .hidden(!isSearching)
                 ScrollView {
                     ForEach(0..<sections.count) { i in
