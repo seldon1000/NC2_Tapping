@@ -41,6 +41,7 @@ struct SearchScreen: View {
             .listStyle(.plain)
             .hidden(searchedText.isEmpty)
         }
+        .padding(.horizontal)
     }
 }
 
