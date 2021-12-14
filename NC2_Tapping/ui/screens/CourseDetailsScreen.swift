@@ -52,7 +52,7 @@ struct CourseDetailsScreen: View {
                     .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
             }
             .frame(height: UIScreen.main.bounds.height / 3)
-            VStack(spacing: 16) {
+            VStack(alignment: .leading, spacing: 16) {
                 HStack(alignment: .top) {
                     Image("rock")
                         .resizable()
@@ -106,11 +106,18 @@ struct CourseDetailsScreen: View {
                 Text(course.description)
                     .font(.system(size: 16))
                 Divider()
-                HStack {
-                    Image(systemName: "star.slash.fill")
-                        .font(.system(size: 24))
-                        .foregroundColor(.yellow)
-                    Toggle("Skip Rating", isOn: $isOn)
+                Toggle(isOn: $isOn) {
+                    HStack {
+                        Image(systemName: "star.slash.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.yellow)
+                        VStack(alignment: .leading) {
+                            Text("Skip Rating")
+                            Text("Ratings will be off for this play only.")
+                                .font(.system(size: 14))
+                                .foregroundColor(.gray)
+                        }
+                    }
                 }
             }
             .padding(.top, 8)
