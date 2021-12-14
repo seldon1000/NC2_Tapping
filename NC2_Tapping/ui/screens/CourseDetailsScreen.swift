@@ -93,6 +93,7 @@ struct CourseDetailsScreen: View {
                                     .background(.gray.opacity(0.2))
                                     .clipShape(Circle())
                             }
+                            .padding(.leading, -8)
                             Spacer()
                             Button(action: { isPresented.toggle() }) {
                                 Image(systemName: "square.and.arrow.up")
@@ -127,11 +128,7 @@ struct CourseDetailsScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    withAnimation {
-                        isFavorite.toggle()
-                    }
-                }) {
+                Button(action: { isFavorite.toggle() }) {
                     Image(systemName: isFavorite ? "star.fill" : "star")
                 }
             }
