@@ -19,7 +19,7 @@ struct AccountButton: View {
                 .frame(width: 52, height: 52)
         }
         .sheet(isPresented: $isPresented) {
-            InterestsSheet(isPresented: $isPresented)
+            AccountSheet(isPresented: $isPresented)
         }
     }
 }

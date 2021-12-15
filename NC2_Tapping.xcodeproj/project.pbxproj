@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A116F5D2764BC9300256FD9 /* InterestsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */; };
+		8A116F5D2764BC9300256FD9 /* AccountSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A116F5C2764BC9300256FD9 /* AccountSheet.swift */; };
 		8A429DC92762208B002BFDD3 /* NC2_TappingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */; };
 		8A429DCD2762208C002BFDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A429DCC2762208C002BFDD3 /* Assets.xcassets */; };
 		8A429DD02762208C002BFDD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A429DCF2762208C002BFDD3 /* Preview Assets.xcassets */; };
 		8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DD6276220C7002BFDD3 /* TappingTab.swift */; };
 		8A429DD9276223E8002BFDD3 /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A429DD8276223E8002BFDD3 /* ListCardView.swift */; };
 		8A656CBE276280F30039F59B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A656CBD276280F30039F59B /* ListItem.swift */; };
+		8A6DD7982769FD2D00C9AAFC /* InterestsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DD7972769FD2D00C9AAFC /* InterestsScreen.swift */; };
 		8A76CC5E276670A5008CEF41 /* AccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76CC5D276670A5008CEF41 /* AccountButton.swift */; };
 		8A76CC60276677FB008CEF41 /* SingleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76CC5F276677FB008CEF41 /* SingleCardView.swift */; };
 		8A76CC6227668053008CEF41 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76CC6127668052008CEF41 /* RoundedCorner.swift */; };
@@ -31,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsSheet.swift; sourceTree = "<group>"; };
+		8A116F5C2764BC9300256FD9 /* AccountSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSheet.swift; sourceTree = "<group>"; };
 		8A429DC52762208B002BFDD3 /* NC2_Tapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2_Tapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A429DC82762208B002BFDD3 /* NC2_TappingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_TappingApp.swift; sourceTree = "<group>"; };
 		8A429DCC2762208C002BFDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		8A429DD6276220C7002BFDD3 /* TappingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappingTab.swift; sourceTree = "<group>"; };
 		8A429DD8276223E8002BFDD3 /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
 		8A656CBD276280F30039F59B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		8A6DD7972769FD2D00C9AAFC /* InterestsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsScreen.swift; sourceTree = "<group>"; };
 		8A76CC5D276670A5008CEF41 /* AccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButton.swift; sourceTree = "<group>"; };
 		8A76CC5F276677FB008CEF41 /* SingleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardView.swift; sourceTree = "<group>"; };
 		8A76CC6127668052008CEF41 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
@@ -138,8 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				8A9D92F82763A45600AF7796 /* CourseDetailsScreen.swift */,
-				8A116F5C2764BC9300256FD9 /* InterestsSheet.swift */,
+				8A116F5C2764BC9300256FD9 /* AccountSheet.swift */,
 				8AD446D22766017E007B310D /* SearchScreen.swift */,
+				8A6DD7972769FD2D00C9AAFC /* InterestsScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -233,8 +236,9 @@
 				8A9D92F92763A45600AF7796 /* CourseDetailsScreen.swift in Sources */,
 				8A656CBE276280F30039F59B /* ListItem.swift in Sources */,
 				8AB453062763C17C00A04D3C /* DashboardTab.swift in Sources */,
+				8A6DD7982769FD2D00C9AAFC /* InterestsScreen.swift in Sources */,
 				8AD446D527663609007B310D /* SearchCategoryButton.swift in Sources */,
-				8A116F5D2764BC9300256FD9 /* InterestsSheet.swift in Sources */,
+				8A116F5D2764BC9300256FD9 /* AccountSheet.swift in Sources */,
 				8A9D92F727639A6C00AF7796 /* Interest.swift in Sources */,
 				8A76CC60276677FB008CEF41 /* SingleCardView.swift in Sources */,
 				8A429DD7276220C7002BFDD3 /* TappingTab.swift in Sources */,

@@ -10,12 +10,19 @@ import SwiftUI
 struct InterestCard: View {
     @State var isSelected: Bool = false
     
+    @Binding var isChanged: Int
+    
     var interest: Interest
     
     var body: some View {
         Button(action: {
             withAnimation {
                 isSelected.toggle()
+                if isSelected {
+                    isChanged += 1
+                } else if isChanged > 0 {
+                    isChanged -= 1
+                }
             }
         }) {
             ZStack {
