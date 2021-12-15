@@ -35,7 +35,7 @@ struct InterestCard: View {
                     Text(interest.title)
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white)
-                    if isSelected {
+                    if isSelected && isChanged > 0 {
                         Image(systemName: "checkmark.circle.fill")
                             .font(.system(size: 24))
                             .foregroundColor(.green)
@@ -48,5 +48,10 @@ struct InterestCard: View {
             .shadow(radius: 4)
         }
         .buttonStyle(.plain)
+        .onChange(of: isChanged) { isChanged in
+            if isChanged == 0 {
+                isSelected = false
+            }
+        }
     }
 }

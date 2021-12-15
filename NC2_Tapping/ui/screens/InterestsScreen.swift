@@ -33,7 +33,11 @@ struct InterestsScreen: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 if isChanged > 0 {
-                    Button(action: { isChanged = 0 }) {
+                    Button(action: {
+                        withAnimation {
+                            isChanged = 0
+                        }
+                    }) {
                         Text("Cancel")
                     }
                 }
